@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title>Star Wars</title>
+    </head>
+    <body>
+    
+        <div class="container">
+            <h1>STAR WARS</h1>
+
+            <button onclick="näytäKaikki()">Näytä Star Wars elokuvat</button>
+            
+            
+            <select class="select-form" id="elokuva" onchange="näytäTietty()">
+                <option value="" selected disabled hidden>Valitse tietty elokuva</option>
+                <option value="Episode IV">Episode IV</option>
+                <option value="2">Episode V</option>
+                <option value="3">Episode VI</option>
+                <option value="4">Episode I</option>
+                <option value="5">Episode II</option>
+                <option value="6">Episode III</option>
+            </select>
+            <br><br>
+        <div id="kaikkidata"></div>
+        <div id="tiettydata"></div> 
+        </div>
+               
+
+        <script src="JS/skripti.js"></script>
+    </body>
+
+</html>
