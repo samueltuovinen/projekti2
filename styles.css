@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #FFE81F;
+}
+.container {
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Pathway Gothic One', sans-serif;;
+}
+h1 {
+    font-size: 3rem;
+    color: #FFE81F;
+
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid #FFE81F;
+}
+button:hover {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FFE81F;
+    border-radius: 6px;
+    border: 2px solid #FFE81F;
+}
+.select-form {
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+#kaikkidata {
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    font-size: 18px;
+}
+
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+
+  td {
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+  }
