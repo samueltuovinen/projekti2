@@ -2,6 +2,7 @@ var jsonObj;
 
 // Functio joka näyttää kaikki elokuvat
 function näytäKaikki() {
+
     var url = "https://swapi.dev/api/films/"
     // Luodaan ajax objekti
     var xmlhttp = new XMLHttpRequest();   
@@ -25,7 +26,6 @@ function näytäKaikki() {
     xmlhttp.send();
 }
 
-
 // functio jolla parsitaan dataa
 function printJSONTable(jsonObj) {
 
@@ -33,9 +33,7 @@ function printJSONTable(jsonObj) {
     // Luodaan looppi joka käy läpi JSON data arrayn
     var out = "<table>";
 
-         // jokaiselle loopille luodaan uusi <tr> tagi ja (+=)
          out += '<tr>';
-         // jokaiseen taulukkoon haetaan dataa JSON:ista
          out += '<td>' + "Episode ID" + '</td>';
          out += '<td>' + "Title" + '</td>';
          out += '<td>' + "Opening crawl" + '</td>';
@@ -87,23 +85,7 @@ function printJSONTable(jsonObj) {
         out += '</tr>'
     out += "</table>";
 
-
-        document.getElementById("kaikkidata").innerHTML = out;
+    // tulosta näytölle
+    document.getElementById("kaikkidata").innerHTML = out;
 
 }
-
-
-
-
-// "https://swapi.dev/api/films/"
-/*
-let url = "https://swapi.dev/api/films/"
-
-fetch(url)
-    .then((response) => {
-        return response.text();
-    })
-    .then((data) => {
-        console.log(JSON.parse(data));
-    });
-    */
