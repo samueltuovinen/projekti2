@@ -11,6 +11,15 @@
 
             <button onclick="näytäKaikki()">Show Star Wars movies</button>
             
+            <select class="elokuva" id="elokuva" onchange="näytäTietty()">
+                <option value="" selected disabled hidden>Valitse tietty elokuva</option>
+                <option value="elokuva1">Episode IV</option>
+                <option value="elokuva2">Episode V</option>
+                <option value="elokuva3">Episode VI</option>
+                <option value="elokuva4">Episode I</option>
+                <option value="elokuva5">Episode II</option>
+                <option value="elokuva6">Episode III</option>
+            </select>
             <br><br>
         <div id="kaikkidata"></div>
         </div>
