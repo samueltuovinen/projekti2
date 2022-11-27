@@ -48,6 +48,13 @@ select {
     border: 2px solid #FFE81F;
     font-size: 1rem;
 }
+select:hover {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FFE81F;
+    border-radius: 6px;
+    border: 2px solid #FFE81F;
+}
 #kaikkidata {
     min-width: 700px;
     display: flex;
